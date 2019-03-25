@@ -1,12 +1,13 @@
 package hello.filters.pre;
 
 import com.netflix.zuul.context.RequestContext;
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.boot.test.rule.OutputCapture;
+
+import javax.servlet.http.HttpServletRequest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
